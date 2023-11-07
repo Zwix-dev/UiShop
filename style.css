@@ -1,0 +1,289 @@
+::-webkit-scrollbar {
+	width: 0.5vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+	left: 0.1vw;
+  }
+  
+  /* TO STYLE THE SCROLLBAR TRACK */
+  ::-webkit-scrollbar-track {
+	background-color: #000000; /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
+	border-radius: 5vw
+  }
+  
+  /* TO STYLE THE SCROLLBAR THUMB */
+  ::-webkit-scrollbar-thumb {
+	background-color: #757575;
+	border-radius: 6vw;
+}
+
+* {
+
+	font-family: Trebuchet MS, sans-serif;
+}
+.fleche-back, .close {
+	overflow: hidden;
+	background-color:rgba(20, 19, 19, 0);
+	position: absolute;
+	color: #ffffff;
+	height: 30px;
+	top:15px;
+	left: 9px;
+	border:none;
+	border-radius: 40%;
+	
+	
+}
+.close {
+	overflow: hidden;
+	background-color:rgba(248, 248, 248, 0);
+	position: absolute;
+	color: #ffffff;
+	height: 15px;
+	left: 9px;
+	border:none;
+	border-radius: 40%;
+	
+}
+.close:hover {
+	cursor: pointer;
+}
+.fleche-back:hover {
+	color: #ffffff;
+	background-color:rgb(0, 0, 0);
+	cursor: pointer;
+}
+.rectangle_1 { 
+    display: none;
+    background-color: rgba(20, 19, 19, 0.932);
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    left: -500px; /* Initial position outside the visible area */
+    top: 150px;
+    border-radius: 20px;
+    transition: left 0.5s ease-in-out; /* Transition effect */
+}
+
+
+.rectangle_1 img { 
+
+	position: relative;
+	top: 40px;
+	left: 50px;
+	height:100px;
+	border-radius: 17px;
+	
+}
+.grid-container {
+	
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	margin-top: 70px;
+    gap: 20px;
+	height: 300px;
+    padding: 50px;
+	max-height: calc(100vh - 40px); /* Hauteur maximale avec déduction des marges */
+
+    overflow-y: auto; /* Ajout de la barre de défilement verticale si nécessaire */
+
+}
+
+.item1 {
+	color: azure;
+	border-radius:20px;
+	background-color: #3E3E3E;
+	height: 115px;
+    text-align: center;
+	align-items: center;
+}
+.item1:hover {
+	
+	background-color: #686565b6;
+}
+.item1 img {
+	top: 10px;
+   	left: 0px;
+	height: 60px;
+	padding-bottom:30.9px;
+}
+
+.item1 button  {
+    background-color: #007bff;
+    color: white;
+	border:none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	width:100%;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	height: 20px;
+}
+.item1 button:hover {
+	background-color: #15487e;
+}
+.basketbtn i {
+	font-size: 40px;
+
+}
+.basketbtn {
+	background-color:rgba(0, 0, 0, 0);
+	padding: 20px;
+	margin-left: 201.5px;
+	border: none;
+	text-decoration: none;
+	align-items: center;
+	color: #ffffff;
+}
+.basketbtn:hover {
+	border-radius: 50%;
+	background-color:rgba(54, 54, 54, 0.589);
+	cursor: pointer;
+
+}
+#basket {
+
+	height: 300px;
+    padding: 50px;
+	width: 70%;
+	margin-left: 5%;
+	margin-top: 70px;
+	overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, 3);
+	overflow-y: auto;
+	gap: 40px;
+}
+
+.Item-basket-container {
+
+
+
+	background-color: #3E3E3E;
+	height: 100px;
+	width: 100%;
+	border-radius:20px;
+	align-items: center;
+	color: #ffffff;
+	align-items: flex-end;
+}
+
+.Item-basket-container:hover {
+	background-color: #686565b6;
+}
+.Item-basket-container img {
+
+	top: 15px;
+	left: 20px;
+ 	height: 60px;
+}
+.bite {
+	width: 20%;
+	margin-top: -50px;
+	margin-left: 100px;
+}
+.labelitembasket {
+	width: 100%;
+}
+.btn-pay {
+	padding: 10px;
+	margin-left: 85px;
+	border: none;
+}
+
+.btn-pay button {
+	color: #ffffff;
+	width:150px;
+	background-color:rgba(0, 0, 0, 0);
+	padding: 10px;
+	border: none;
+	margin-right: 20px;
+	
+}
+.btn-pay button:hover {
+	color: #ffffff;
+	background-color:rgba(65, 64, 64, 0.932);
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+}
+.btn-pay button i {
+	
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	
+	
+}
+.totaldelitemprix {
+	margin-left:-10px;
+	margin-right:-10px;
+	
+}
+.deletebtn{
+	margin-left:190px;
+	color: #ffffff;
+	background-color:rgba(218, 37, 37, 0);
+	border:none;
+	border-radius: 3px;
+}
+
+.deletebtn:hover{
+	cursor: pointer;
+}
+
+.deletebtn i {
+	
+	padding:5px
+}
+.counter {
+	width: 30%;
+    display: flex;
+    justify-content: center;
+	height: 20px;
+	width: 30px;
+	margin-top:-20px;
+	margin-left: 20px;
+}
+.counter p {
+	height: 10px;
+    border-radius: 30%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnplus{
+    height: 20px;
+    width: 30px;
+    border-radius: 10px;
+    font-size: 10px;
+	
+    background-color: #36771d;
+    border: 2px solid #2e4f8d00;
+    color: white;
+    margin: 13px;
+}
+
+#btnmoins {
+	height: 20px;
+    width: 30px;
+    border-radius: 10px;
+    font-size: 10px;
+	background-color: #911e1e;
+	border: 2px solid #2e4f8d00;
+    color: white;
+    margin: 13px;
+}
+#btnmoins, #btnplus:hover{
+
+	cursor: pointer;
+}
+.totaldupanier {
+
+
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	
+	color: #36771d;
+
+}
